@@ -34,7 +34,7 @@ resource "null_resource" "terraform_provisioners" {
     destination = "/home/ubuntu/script.sh"
   }
   provisioner "local-exec" {
-    command = "echo ${aws_instance.provisioner_instance.public_ip} and ${aws_instance.provisioner_instance.public_dns} >> public_ip.tx"
+    command = "echo ${aws_instance.provisioner_instance.public_ip} and ${aws_instance.provisioner_instance.public_dns} >> public_ip.txt"
 
   }
   provisioner "remote-exec" {
