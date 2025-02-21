@@ -71,7 +71,7 @@ provisioner "file" {
 }
 
 ```
-2. **Local-exec Provisioners**
+2. **Local-Exec Provisioners**
 The `local-exec` provisioner allows you to run commands or scripts on the machine where Terraform is executed, typically your local development machine or a CI/CD server. This provisioner is often used for tasks that don’t require access to the remote resource. That is, it does not require *connection* to the remote resource.
 
 **Example**
@@ -101,7 +101,7 @@ resource "null_resource" "local_exec" {
 ```
 
 
-3. **Remote-exec Provisioner**
+3. **Remote-Exec Provisioner**
 
 The `remote-exec` provisioner allows you to run commands or scripts on a remote resource over SSH or WinRM after the resource is created. This provisioner is commonly used for tasks like software installations and configuration on remote instances.
 
