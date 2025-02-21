@@ -341,3 +341,26 @@ sudo cp <name_of_the_folder_sync_from_s3_bucket>/* /var/www/html
 sudo systemctl restart apache2
 
 ```
+**Create the resources by running the following terraform commands**
+
+- *Initialize or download terraform plugins*
+```bash
+terraform init
+```
+- *Format your terraform configuration*
+```bash
+terraform fmt
+```
+- *Validate your terraform configuration syntaxes*
+```bash
+terraform validate
+```
+- *See the changes terraform will make in your cloud environment*
+```bash
+terraform plan
+```
+
+- *Create the resources*
+```bash
+terraform apply -auto-approve
+```
